@@ -1,0 +1,25 @@
+/* pages/sign/sign.wxss */
+
+input{
+  margin-left: 50rpx;
+  margin-right:50rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  padding-left: 10rpx;
+  height: 100rpx;
+  border: 5rpx solid #c3c3c3;
+}
+
+view{
+  margin-left: 50rpx;
+  margin-right:50rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50rpx;
+}

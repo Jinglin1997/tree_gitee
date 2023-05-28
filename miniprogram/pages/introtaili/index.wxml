@@ -1,0 +1,4 @@
+<!--pages/introtaili/index.wxml-->
+<!-- <text>pages/introtaili/index.wxml</text> -->
+<view>2023元辰纪台历介绍</view>
+<button bindtap = "totaili">跳转到台历购买小程序</button>

@@ -1,0 +1,25 @@
+<!--pages/shopping/index.wxml-->
+<!-- <view class = "alertword">该页面还在施工中，尽情期待！</view> -->
+<!-- <button bindtap="getOpenid">1:获取用户openId</button>
+<button bindtap = "shouquan"> 2.获取用户授权</button>
+<input placeholder="输入更新名" bindinput = "getName"></input>
+<button bindtap = "sendone"> 3. 发送订阅消息给单个用户</button>
+<button bindtap = "sendmany"> 4. 发送订阅消息给多个用户</button>
+
+<button open-type="contact">客服咨询</button> -->
+
+<view>
+  <view class = "action_notice">
+    <button >
+      <image src ="cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/inspiration/通知icon.png" mode = "heightFix" class = "notice_img"></image>
+    </button>
+    <button class = "notice">活动通知</button>
+  </view>
+
+  <view class = "message_mail">
+    <button >
+      <image src ="cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/inspiration/信箱icon.png" mode = "heightFix" class = "message_img"></image>
+    </button>
+    <button class = "message">留言信箱</button>
+  </view>
+</view>

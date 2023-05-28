@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<!-- 写一个小程序 保存下来结果 -->
+<button bindtap = "danshen"> 我是单身 </button>
+<button bindtap = "yihun"> 我已经结婚 </button>
+<button bindtap = "weihun"> 我未婚 </button>
+<button bindtap = "cleardata">清除数据</button>
+<view>{{id_danshen}}</view>
+<view>{{id_yihun}}</view>
+<view>{{id_weihun}}</view>

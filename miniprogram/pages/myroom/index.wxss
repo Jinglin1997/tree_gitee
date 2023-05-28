@@ -1,0 +1,127 @@
+/* pages/selfroom/index.wxss */
+.alertword{
+  font-size:21px;
+}
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+ }
+  
+ .header image {
+  width: 200rpx;
+  height: 200rpx;
+ }
+  
+ .content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+ }
+  
+ .content text {
+  display: block;
+  color: #ad7d7d;
+  margin-top: 40rpx;
+ }
+  
+ .bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+ }
+
+#mine{
+  width:100%;
+  height:100%;
+  background: #f3f3f3;
+}
+
+.up_part{
+  width:100%;
+  height:420rpx;
+  background-image: url('https://636c-cloud1-2gx6xlsu0ca67a99-1311762654.tcb.qcloud.la/Hpimages/myroom/%E4%B8%8A%E9%83%A8%E8%83%8C%E6%99%AF.png?sign=92a52e0ab40bc46f9f6508d1da6b9a78&t=1685159810');/*#ff6034*/
+  /* background-color:grey; */
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.id_image{
+  width:160rpx;
+  height:160rpx;
+  border-radius: 10%;/*50%*/
+  margin-top:60rpx;
+  position:relative;
+  left:50%;
+  margin-left:-80rpx;
+}
+
+.id_name{
+  text-align:center;
+  color: rgb(0, 0, 0);
+  margin-top:12rpx;
+}
+
+.nav{
+  width:100%;
+  display:flex;
+}
+
+/*.nav-tiem{}*/
+.nav-item{
+  flex: 1;
+  text-align:center;
+  color: #FFF;
+  margin-top:30rpx;
+}
+
+.nav-item-title{
+  font-size:26rpx;
+  margin-top:10rpx;
+}
+
+.join_day{
+  color: white;
+  margin-top:20rpx;
+  font-size:14px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.ID_info{
+  display:flex;
+  flex-direction: row;
+  margin-top:85rpx;
+}
+
+.ID{
+  margin-left:100rpx;
+  font-weight: bold;
+}
+
+.usersID{
+  margin-left:40rpx;
+}
+
+.management{
+  width:100%;
+  text-align: left;
+  margin-top:20rpx;
+  margin-left:69rpx;
+}
+
+.down_part{
+  margin-top:100rpx;
+  width:100%;
+  height:840rpx;
+  background-image: url('https://636c-cloud1-2gx6xlsu0ca67a99-1311762654.tcb.qcloud.la/Hpimages/myroom/%E4%B8%8B%E9%83%A8%E8%83%8C%E6%99%AF.png?sign=02bbafa9bbbba9e952b4a679435cf2bd&t=1685161531');/*#ff6034*/
+  /* background-color:grey; */
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}

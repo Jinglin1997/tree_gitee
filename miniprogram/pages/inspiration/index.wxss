@@ -1,0 +1,40 @@
+/* pages/shopping/index.wxss */
+.alertword{
+  font-size:21px;
+}
+
+.action_notice{
+  display:flex;
+  flex-direction: row;
+}
+
+.notice_img{
+  width:100rpx;
+  height:50rpx;
+  margin-left:50rpx;
+  margin-top:20rpx;
+}
+
+.notice{
+  width:100%;
+  text-align: left;
+  margin-left:20rpx;
+}
+
+.message_mail{
+  display:flex;
+  flex-direction: row;
+}
+
+.message_img{
+  width:100rpx;
+  height:30rpx;
+  margin-left:50rpx;
+  margin-top:20rpx
+}
+
+.message{
+  width:100%;
+  text-align: left;
+  margin-left:20rpx;
+}

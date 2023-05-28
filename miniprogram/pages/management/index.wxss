@@ -1,0 +1,26 @@
+/* pages/management/index.wxss */
+
+.phone{
+  width:100%;
+  text-align: left;
+}
+
+.mail{
+  width:100%;
+  text-align: left;
+}
+
+.password{
+  width:100%;
+  text-align: left;
+}
+
+.logoff{
+  width:100%;
+  text-align:left;
+}
+
+.exit{
+  width:100%;
+  text-align:left;
+}

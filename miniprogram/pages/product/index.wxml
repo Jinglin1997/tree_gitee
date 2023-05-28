@@ -1,0 +1,22 @@
+<!--pages/sell/index.wxml-->
+<!--<text>pages/sell/index.wxml</text>-->
+<!-- <view>施工中，敬请期待！</view> -->
+<view class='selection'>
+    <!-- 头部文字 -->
+    <view class="header">
+      <text class = "title" style='margin-left: 5px;'>KELP商品铺子</text>
+    </view>
+    <!-- 内容 -->
+    <view class='content'>
+      <view class='content-item' wx:for="{{contentImgUrls}}" wx:key="url" wx:for-item="item">
+        <!-- 图片 -->
+        <!-- <button bindtap = "taili" class= "slide-image"></button> -->
+        <image src="{{item.url}}" bindtap="taili" class="slide-image" mode='scaleToFill'></image>
+        <!-- 图片上的文字说明 -->
+        <view class='content-item-title'>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <button bindtap = "taili" class= "slide-image">台历</button> -->

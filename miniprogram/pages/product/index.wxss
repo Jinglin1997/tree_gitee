@@ -1,0 +1,49 @@
+/* pages/sell/index.wxss */
+.header{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(215, 233, 215);
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding-left: 50rpx;
+  padding-right: 10rpx;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-item{
+  width: 88%;
+  height: 420rpx;
+  background-color: rgb(118, 206, 221);
+  margin: 10px;
+  /* 绝对定位的父级必须要定位 */
+  position: relative;
+}
+
+.content-item-title{
+  position: absolute; /*绝对定位,文字覆盖图片上*/
+  color: white;
+  bottom: 0px; /* 位置在父级元素底部 */
+  font-size: 17px;
+  width: 98%;
+  height: 50rpx; /* 设置容器高度,显示渐变的高度 */
+  text-align: center;
+  /* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+  display: flex; /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
+}

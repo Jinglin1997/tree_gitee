@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/sign/sign",
+    "pages/login/login",
+    "pages/homepage/index",
+    "pages/product/index",
+    "pages/inspiration/index",
+    "pages/myroom/index",
+    "pages/management/index",
+    "pages/aboutKELP/index",
+    "pages/index/index",
+    "pages/introtaili/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index",
+    "pages/introkelp/introkelp"
+  ],
+  
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "KELP克朴制素",
+    "navigationBarTextStyle": "black"
+
+  },
+
+  "tabBar": {
+    "selectedColor":"#33a3dc",
+    "list" : [
+      {
+        "pagePath": "pages/homepage/index",
+        "text": "首页"
+      },
+
+      {
+        "pagePath": "pages/product/index",
+        "text": "产品"
+      },
+
+      {
+        "pagePath": "pages/inspiration/index",
+        "text": "灵感"
+      },
+      {
+        "pagePath": "pages/myroom/index",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "resizable": true
+  
+}

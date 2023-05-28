@@ -1,0 +1,10 @@
+<!--pages/management/index.wxml-->
+<!-- <text>pages/management/index.wxml</text> -->
+<view class = "function">
+  <button class = "phone">手机号</button>
+  <button class = "mail">邮箱</button>
+  <button class = "password">密码</button>
+  <button class = "logoff">注销</button>
+  <button class = "exit">退出账号</button>
+</view>
+

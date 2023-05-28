@@ -1,0 +1,14 @@
+<!--pages/sign/sign.wxml-->
+<!-- <text>pages/sign/sign.wxml</text> -->
+
+<view>用户名</view>
+<input type="text" placeholder="请输入用户名" bindinput="getUserName"></input>
+<view>账号</view>
+<input type="text" placeholder="请输入账号" bindinput="getAccount"></input>
+<view>密码</view>
+<input type="text" placeholder="请输入密码" bindinput="getPassword"></input>
+<view>重复确认密码</view>
+<input type="text" placeholder="请再次输入密码" bindinput="getPassword2"></input>
+<view class="btn">
+<button type="primary" bindtap="sign">注册</button>
+</view>

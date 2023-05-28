@@ -1,0 +1,33 @@
+<!--pages/homepage/index.wxml-->
+<!-- <view wx:if="{{showAuthorizationPage}}">
+ <view wx:if="{{canIUse}}" >
+  <view class='header'>
+  
+  </view>
+ 
+  <view class='content'>
+   <view>申请获取以下权限</view>
+   <text>获得你的公开信息(昵称，头像等)</text>
+  </view> -->
+  
+  <!--小程序官方的获取用户信息的接口变化了，后续可能会修改-->
+  <!-- <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+   登录
+  </button>
+ </view>
+ <view wx:else>请升级微信版本</view>
+</view> -->
+ 
+<view class = "homepage-main">
+  <image class = "homepic" src="cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/homepage/首页背景.png" mode = "widthFix"></image>
+  <!-- cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hbimages/心书首页/首页图01.jpg -->
+  <!-- <image class = "heartbook_pic" mode = "widthFix" src= "cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/homepage/心书水滴-完整版.png"></image> -->
+  <button class = "heartbook" bindtap = "heartbook" style = "width:240rpx; height:350rpx"></button>
+  <button class = "aboutKELP" bindtap = "aboutKELP" style = "width:140rpx; height:140rpx"></button>
+
+  
+  <!-- <button class = "heart-book" bindtap = "heartbook">心-书</button> -->
+</view>
+
+
+

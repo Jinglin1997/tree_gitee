@@ -1,0 +1,44 @@
+<!--pages/selfroom/index.wxml-->
+<view id="mine">
+    <view class="up_part">
+      <view wx:if = "{{userInfo}}">
+        <image class="id_image" src="{{ userInfo.avatarUrl }}"></image>
+        <view class="id_name" bind:tap="getUserInfo"> {{userInfo.nickName}}</view>
+        <view class = "join_day">已加入{{join_day}}天</view>
+        <view class = "ID_info">
+          <view class = "ID">ID</view>
+          <view class = "usersID"> {{usersID}}</view>
+        </view>
+        <button class = "management" bindtap = "management">账号管理</button>
+      </view>
+      <view wx:else>
+        <image class="id_image" src="/miniprogram/images/小人-1.png"></image>
+        <view class="id_name" bind:tap="login"> 登录/注册</view>
+      </view>
+      
+
+      <!-- <view class="nav">
+        <view class="nav-item">
+          <view>{{ userInfo.money || 0}}</view>
+          <view class="nav-item-title">余额</view>
+        </view>
+        <view class="nav-item">
+          <view>{{ userInfo.credit || 0}}</view>
+          <view class="nav-item-title">积分</view>
+        </view>
+        <view class="nav-item">
+          <view>{{ userInfo.message || 0}}</view>
+          <view class="nav-item-title">消息</view>
+        </view>
+      </view> -->
+    </view>
+    <!-- <text class="userID" decode="{{true}}">ID&nbsp;&nbsp;&nbsp;{{usersID}}</text> -->
+    <!-- <view class = "ID_info">
+      <view class = "ID">ID</view>
+      <view class = "usersID"> {{usersID}}</view>
+    </view>
+    <button class = "management" bindtap = "management">账号管理</button> -->
+
+    <view class = "down_part">
+    </view>
+  </view>
