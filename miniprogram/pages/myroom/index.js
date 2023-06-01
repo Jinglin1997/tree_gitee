@@ -52,6 +52,12 @@ Page({
     })
   },
 
+  addUser:function(){
+    const { result :{ data } } = wx.cloud.callFunction({
+      name:'addUser',
+    })
+  },
+
   management(){
     wx.navigateTo({
       url:'../management/index'

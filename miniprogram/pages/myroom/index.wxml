@@ -41,5 +41,6 @@
     <button class = "management" bindtap = "management">账号管理</button> -->
 
     <view class = "down_part">
+      <button bindtap = "addUser">调用addUser</button>
     </view>
   </view>
