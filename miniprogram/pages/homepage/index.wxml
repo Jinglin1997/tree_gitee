@@ -19,7 +19,7 @@
 </view> -->
  
 <view class = "homepage-main">
-  <image class = "homepic" src="cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/homepage/首页背景.png" mode = "widthFix"></image>
+  <image class = "homepic" src="cloud://kelptree-2g5dhw6sb039e010.6b65-kelptree-2g5dhw6sb039e010-1317303536/Hpimages/homepage/首页背景.png" mode = "widthFix"></image>
   <!-- cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hbimages/心书首页/首页图01.jpg -->
   <!-- <image class = "heartbook_pic" mode = "widthFix" src= "cloud://cloud1-2gx6xlsu0ca67a99.636c-cloud1-2gx6xlsu0ca67a99-1311762654/Hpimages/homepage/心书水滴-完整版.png"></image> -->
   <button class = "heartbook" bindtap = "heartbook" style = "width:240rpx; height:350rpx"></button>

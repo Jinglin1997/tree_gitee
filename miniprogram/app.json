@@ -47,10 +47,6 @@
       },
 
       {
-        "pagePath": "pages/inspiration/index",
-        "text": "灵感"
-      },
-      {
         "pagePath": "pages/myroom/index",
         "text": "我的"
       }

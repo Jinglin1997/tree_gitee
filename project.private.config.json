@@ -121,9 +121,17 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "projectname": "tree_gitee"
+  "projectname": "tree_gitee",
+  "libVersion": "2.32.1"
 }

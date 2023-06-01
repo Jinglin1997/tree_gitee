@@ -85,8 +85,9 @@
 
 .join_day{
   color: white;
-  margin-top:20rpx;
+  margin-top:10rpx;
   font-size:14px;
+  font-weight: bold;
   display:flex;
   flex-direction: column;
   justify-content: center;

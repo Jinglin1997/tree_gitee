@@ -1,12 +1,13 @@
 // 云函数入口文件
-const cloud = require('wx-server-sdk')
-
-// 指定云函数环境，必须要做
-cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV }) // 使用当前云环境
+const cloud = require('wx-server-sdk');
+cloud.init({
+  env: "kelptree-2g5dhw6sb039e010",
+  traceUser: true,
+})
 
 // 云函数入口函数
 exports.main = async (event) => {
-  const { nickName, avatarUrl} = event
+  const { posttime, nickName, avatarUrl} = event
   const OPENID = cloud.getWXContext()
 
   // 如果数据库存在当前用户信息，则直接返回当前用户信息（登录），如果数据库内没有当前用户信息，则注册。
@@ -28,9 +29,9 @@ exports.main = async (event) => {
         posttime,
         nickName,
         avatarUrl,
-        money:0,
-        credit:0,
-        message:0,
+        // money:0,
+        // credit:0,
+        // message:0,
         openid: OPENID
       }
     })

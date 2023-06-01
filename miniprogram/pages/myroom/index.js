@@ -15,15 +15,15 @@ Page({
   },
 
   //用户登录
-  login(){
-    wx.navigateTo({
-      url:'../login/login'
-    })
-  },
+  // login(){
+  //   wx.navigateTo({
+  //     url:'../login/login'
+  //   })
+  // },
 
   // 用户授权
-  async getUserInfo(){
-    var time = util.formatTime(new Date());
+  async login(){
+    var nowTime = util.formatTime(new Date());
 
     // 1、用户授权获取信息
     const { userInfo: { nickName, avatarUrl} } = await wx.getUserProfile({
@@ -32,17 +32,23 @@ Page({
     
     //2、把当前的用户信息交给后端，存储生成账号
     const { result :{ data } } = await wx.cloud.callFunction({
-      name:'login',
+      name:'newtest',
       data:{
-        posttime: time,
+        posttime: nowTime,
         nickName: nickName,
         avatarUrl: avatarUrl,
       }
     })
 
     console.log(data)
+    var loginTime = data.posttime
+    var temp_nowTime = new Date(nowTime.replace(/-/g,'/')) 
+    var temp_loginTime = new Date(loginTime.replace(/-/g,'/'))
+    var joinDay = parseInt((temp_nowTime - temp_loginTime)/1000/60/60/24)
+
     this.setData({
-      userInfo: data
+      userInfo: data,
+      join_day: joinDay,
     })
   },
 
@@ -51,6 +57,42 @@ Page({
       url:'../management/index'
     })
   },
+
+  // 获取用户手机号
+//   getPhoneNumber(e) {
+//     // console.log(e.detail)
+//     wx.cloud.callFunction({
+//         name: 'getPhoneNumber',
+//         data: {
+//             code: e.detail.code
+//         },
+//         success: (res) => {
+//             console.log('调用云函数', res)
+//             const phone = res.result.phoneInfo
+//             console.log('手机号为：',phone)
+//         }
+//     })
+// },
+
+
+  getPhoneNumber(e){
+    var that=this;
+    wx.cloud.callFunction({
+      name:'getPhoneNumber',
+      data:{
+        weRunData:wx.cloud.CloudID(e.detail.CloudID)
+      }
+    }).then(res=>{
+      console.log(res.result)
+      that.setData({
+        mobile:res.result,
+      })
+    }).catch(err=>{
+      console.error(err);
+    })
+  },
+
+
 
   onShow(){
     // let that = this;
@@ -61,6 +103,7 @@ Page({
   onLoad:  function() {
     
   },
+
   
 
  })

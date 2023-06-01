@@ -10,6 +10,7 @@
           <view class = "usersID"> {{usersID}}</view>
         </view>
         <button class = "management" bindtap = "management">账号管理</button>
+        <button type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="getPhoneNumber" >获取手机号</button>
       </view>
       <view wx:else>
         <image class="id_image" src="/miniprogram/images/小人-1.png"></image>
