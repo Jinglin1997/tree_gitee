@@ -32,7 +32,7 @@ Page({
     
     //2、把当前的用户信息交给后端，存储生成账号
     const { result :{ data } } = await wx.cloud.callFunction({
-      name:'newtest',
+      name:'login',
       data:{
         posttime: nowTime,
         nickName: nickName,
@@ -80,23 +80,22 @@ Page({
 //     })
 // },
 
+getPhoneNumber(e) {
+	wx.cloud.callFunction({
+	    name: 'decodePhone',
+	    data: {
+	        cloudID: e.detail.cloudID
+	    },
+	    success: function (res) {
+	        console.log("PhoneNumber", res.result)
+	        _this.setData({
+	            mobile: res.result.list[0].data.phoneNumber
+	        })
+	    },
+	    fail: console.error
+	})
+},
 
-  getPhoneNumber(e){
-    var that=this;
-    wx.cloud.callFunction({
-      name:'getPhoneNumber',
-      data:{
-        weRunData:wx.cloud.CloudID(e.detail.CloudID)
-      }
-    }).then(res=>{
-      console.log(res.result)
-      that.setData({
-        mobile:res.result,
-      })
-    }).catch(err=>{
-      console.error(err);
-    })
-  },
 
 
 

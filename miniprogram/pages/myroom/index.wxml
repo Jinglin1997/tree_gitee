@@ -11,6 +11,7 @@
         </view>
         <button class = "management" bindtap = "management">账号管理</button>
         <button type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="getPhoneNumber" >获取手机号</button>
+        <view>手机号为{{phone}}</view>
       </view>
       <view wx:else>
         <image class="id_image" src="/miniprogram/images/小人-1.png"></image>
@@ -41,6 +42,5 @@
     <button class = "management" bindtap = "management">账号管理</button> -->
 
     <view class = "down_part">
-      <button bindtap = "addUser">调用addUser</button>
     </view>
   </view>

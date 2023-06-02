@@ -1,5 +1,6 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk');
+
 cloud.init({
   env: "kelptree-2g5dhw6sb039e010",
   traceUser: true,
@@ -48,5 +49,4 @@ exports.main = async (event) => {
       data: data[0]
     }
   }
-  
 }
